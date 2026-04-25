@@ -27,17 +27,23 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+
     <script>
-        Blazor.start({
-            loadBootResource: function (type, name, defaultUri, integrity) {
-                if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
-                    return (async function () {
-                        const response = await fetch(defaultUri, { cache: 'no-cache' });
-                        return response;
-                    })();
-                }
+        // Ponemos una pequeña espera para asegurar que el objeto Blazor ya existe
+        window.onload = function () {
+            if (window.Blazor) {
+                Blazor.start({
+                    loadBootResource: function (type, name, defaultUri, integrity) {
+                        if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
+                            return (async function () {
+                                const response = await fetch(defaultUri, { cache: 'no-cache' });
+                                return response;
+                            })();
+                        }
+                    }
+                });
             }
-        });
+        };
     </script>
 </body>
 
