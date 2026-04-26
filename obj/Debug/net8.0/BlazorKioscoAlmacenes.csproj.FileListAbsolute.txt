@@ -1115,6 +1115,6 @@ C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\refint\BlazorKioscoAlmacenes.
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\BlazorKioscoAlmacenes.pdb
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\ref\BlazorKioscoAlmacenes.dll
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\0kcnwylwpf-dgwgskoyeh.gz
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\9f1k738oom-kqgixwqb7w.gz
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\0z2iuuonk4-ki40nwvi1q.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\0kcnwylwpf-ykaal9no02.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\9f1k738oom-yvy4o1hc2i.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Debug\net8.0\compressed\0z2iuuonk4-sldfg7mihs.gz
