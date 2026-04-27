@@ -1105,6 +1105,9 @@ C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\ptaeekyni2-tjcz0
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\mbjdk1wibp-tptq2av103.gz
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\quktufmcaj-lfu7j35m59.gz
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\j90sdh2qqu-oyz0vx2fzb.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\0kcnwylwpf-1k0a2aaxn2.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\9f1k738oom-pl5i2d9ge9.gz
+C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\0z2iuuonk4-kiz1h1or0r.gz
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\staticwebassets.build.json
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\staticwebassets.build.json.cache
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\staticwebassets.development.json
@@ -1115,6 +1118,3 @@ C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\BlazorKioscoAlmacenes.dll
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\refint\BlazorKioscoAlmacenes.dll
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\BlazorKioscoAlmacenes.pdb
 C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\ref\BlazorKioscoAlmacenes.dll
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\0kcnwylwpf-ij3ort7nu8.gz
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\9f1k738oom-b4aidqqgka.gz
-C:\Sistemas\BlazorKioscoAlmacenes\obj\Release\net8.0\compressed\0z2iuuonk4-w7ayu8i7w1.gz

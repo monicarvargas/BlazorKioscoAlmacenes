@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorKioscoAlmacenes",
   "resources": {
-    "hash": "sha256-iobYOKRSHDkWnhduTm1cibzA9I6hXiuPnjOgDXiEj20=",
+    "hash": "sha256-bp2gGVNCDaFO/myY8fe5Dqdoym+LnOTBBjEpfBAdM3s=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-A16ka545FHaB+QXjyJ4exXh7XpBAAIFnX8YkC4xAng8="
     },
@@ -106,7 +106,7 @@
       "System.wasm": "sha256-25KTxVbx+rD8S9iyUye7jmbj1e4TZ5Ca+elup4oegJA=",
       "netstandard.wasm": "sha256-qBhQpiKNF1ykVlV7yAWi8ZPMWf3fMf0j5etOkuszu3A=",
       "System.Private.CoreLib.wasm": "sha256-oMLs38nkM0pkgr9kk6ilUIrQ/RVN7p50MrcQFy5saJo=",
-      "BlazorKioscoAlmacenes.wasm": "sha256-7uZI3wJAAVwX1OtIHfCdn9JrtZ7YKkw0JiJS62IJZq4="
+      "BlazorKioscoAlmacenes.wasm": "sha256-UauQyh6b2N0mdc5Xc9w75Qe8d3sOc6f9bASG7Slcpv4="
     }
   },
   "cacheBootResources": true,

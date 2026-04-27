@@ -1,0 +1,95 @@
+﻿@page "/productos"
+@using BlazorKioscoAlmacenes.Models
+@using BlazorKioscoAlmacenes.Services
+@inject Supabase.Client Supabase
+@inject AppState State
+
+<div class="container mt-3">
+    @* --- BARRA DE BÚSQUEDA SUPERIOR --- *@
+    <div class="sticky-top bg-white pb-3">
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-light border-end-0">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="text" class="form-control border-start-0 bg-light"
+                   placeholder="Buscar por artículo o código"
+                   @oninput="OnSearchChanged" />
+        </div>
+    </div>
+
+    @* --- LISTADO DE PRODUCTOS --- *@
+    <div class="list-group list-group-flush">
+        @if (productosFiltrados == null)
+        {
+            <div class="text-center p-5">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p>Cargando artículos...</p>
+            </div>
+        }
+        else if (!productosFiltrados.Any())
+        {
+            <div class="alert alert-light text-center">
+                No se encontraron productos.
+            </div>
+        }
+        else
+        {
+            @foreach (var prod in productosFiltrados)
+            {
+                <div class="list-group-item d-flex align-items-center py-3 border-bottom">
+                    @* Icono/Imagen genérica *@
+                    <div class="bg-light rounded p-3 me-3 text-secondary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-camera shadow-sm"></i>
+                    </div>
+
+                    @* Info del Producto *@
+                    <div class="flex-grow-1">
+                        <div class="fw-bold text-uppercase small text-dark">@prod.Nombre</div>
+                        <div class="fs-5 fw-bold text-primary">$ @prod.PrecioVenta?.ToString("N2")</div>
+                        <div class="text-muted small">@prod.CodigoBarras</div>
+                    </div>
+
+                    @* Stock (Opcional) *@
+                    <div class="text-end text-muted small">
+                        0,0
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private List<Producto> todosLosProductos = new();
+    private List<Producto> productosFiltrados = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Traemos los productos del Kiosco logueado
+        var response = await Supabase.From<Producto>()
+            .Where(x => x.KioscoId == State.KioscoId)
+            .Get();
+
+        todosLosProductos = response.Models;
+        productosFiltrados = todosLosProductos;
+    }
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        string busqueda = e.Value?.ToString()?.ToLower() ?? "";
+
+        if (string.IsNullOrWhiteSpace(busqueda))
+        {
+            productosFiltrados = todosLosProductos;
+        }
+        else
+        {
+            productosFiltrados = todosLosProductos
+                .Where(p =>
+                    (!string.IsNullOrEmpty(p.Nombre) && p.Nombre.ToLower().Contains(busqueda)) ||
+                    (!string.IsNullOrEmpty(p.CodigoBarras) && p.CodigoBarras.ToLower().Contains(busqueda))
+                )
+                .ToList();
+        }
+    }
+}
